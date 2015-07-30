@@ -1,11 +1,10 @@
 server {
 	server_name packages.dargon.io;
-	root /var/www/io.dargon.packages;
-	client_max_body_size 5M;
-	client_body_timeout 60;
+	client_max_body_size 16K;
+	client_body_timeout 15s;
 	
 	location / {
-		try_files $uri =404;
+		root /var/www/io.dargon.packages;
 		autoindex on;
 	}
 }
