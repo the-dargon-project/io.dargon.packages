@@ -6,5 +6,6 @@ server {
 	location / {
 		root /var/www/io.dargon.packages;
 		autoindex on;
+		default_type text/plain;
 	}
 }
