@@ -5,6 +5,6 @@ server {
 	client_body_timeout 60;
 	
 	location / {
-		try_files $uri $uri/;
+		try_files $uri;
 	}
 }
